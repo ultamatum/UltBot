@@ -32,7 +32,7 @@ client.on('messageCreate', message =>
 
     if (client.commands.has(command))
     {
-        client.commands.get(command).execute(message, args);
+        client.commands.get(command).execute(message, args, Discord);
     }
 });
 

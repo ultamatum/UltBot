@@ -3,6 +3,6 @@ module.exports = {
     description: "Command that links to my Website",
     execute(message, args)
     {
-        message.channel.send('https://www.ultamatum.dev');
+        message.reply('https://www.ultamatum.dev');
     }
 }

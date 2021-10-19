@@ -3,6 +3,6 @@ module.exports = {
     description: "Command that links to my Twitter",
     execute(message, args)
     {
-        message.channel.send('https://twitter.com/UltamatumDev');
+        message.reply('https://twitter.com/UltamatumDev');
     }
 }
