@@ -5,12 +5,7 @@ module.exports = {
     {
         if (args[0])
         {
-            message.guild.members.fetch({ user: args[0], cache: false })
-                .then(value =>
-                {
-                    message.reply(`It's ${value}`)
-                })
-                .catch(console.error);
+            message.reply(`It's <@${args[0]}>`);
         } else
         {
             message.reply('Invalid syntax please provide a user ID (looks like a bunch of numbers)');
