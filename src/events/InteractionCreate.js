@@ -1,12 +1,6 @@
 module.exports = {
 	name: 'interactionCreate',
 	async execute(interaction) {
-		console.log(interaction)
-
-		console.log(
-			`Logged in as ${interaction.client.user.tag}`
-		)
-
 		if (!interaction.isCommand()) return
 
 		const command = interaction.client.commands.get(
