@@ -36,26 +36,18 @@ module.exports = {
 			"I'd like to see things from your point of view but I can't seem to get my head that far up my ass.",
 		]
 
-		if (!user) {
-			await interaction.reply({
-				content: 'Specify a user!',
-				ephemeral: true,
-			})
-		} else {
-			await interaction.channel.send(
-				`${
-					possReplies[
-						Math.floor(
-							Math.random() *
-								possReplies.length
-						)
-					]
-				} <@${user.id}>`
-			)
-			await interaction.reply({
-				content: "I've insulted them for you <3",
-				ephemeral: true,
-			})
-		}
+		await interaction.channel.send(
+			`${
+				possReplies[
+					Math.floor(
+						Math.random() * possReplies.length
+					)
+				]
+			} <@${user.id}>`
+		)
+		await interaction.reply({
+			content: "I've insulted them for you ❤️",
+			ephemeral: true,
+		})
 	},
 }
