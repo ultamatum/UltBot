@@ -6,9 +6,13 @@ const {
 	Intents,
 	Collection,
 } = require('discord.js')
+const { getEventListeners } = require('node:events')
 
 const client = new Client({
-	intents: [Intents.FLAGS.GUILDS],
+	intents: [
+		Intents.FLAGS.GUILDS,
+		Intents.FLAGS.GUILD_MESSAGES,
+	],
 })
 
 client.commands = new Collection()
