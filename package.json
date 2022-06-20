@@ -5,6 +5,7 @@
 	"main": "src/main.js",
 	"scripts": {
 		"start": "node src/main.js",
+		"livestart": "node src/deploy-commands.js && node src/main.js",
 		"update": "node src/deploy-commands.js"
 	},
 	"repository": {
